@@ -8,4 +8,5 @@ import (
 
 func SetupRoles(r *gin.Engine) {
 	r.GET("/users", controller.GetUsers)
+	r.POST("/user", controller.SaveUser)
 }
